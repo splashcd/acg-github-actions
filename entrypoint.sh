@@ -1,6 +1,6 @@
 #!/bin/sh
 
 echo "hello $INPUT_MYINPUT"
-echo "BLOOMFIELD: $BLOOMFIELD"
+echo "BLOOMFIELD: ${{ secrets.BLOOMFIELD }}"
 memory=$(cat /proc/meminfo)
 echo "::set-output name=memory::$memory"
