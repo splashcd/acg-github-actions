@@ -15,4 +15,4 @@ jobs:
         run: |
           echo ${{ steps.hello.outputs.memory }}
           echo "total memory successfully outputted"
-          echo ${{ env.BLOOMFIELD }}
+          echo ${{ secrets.BLOOMFIELD }}
